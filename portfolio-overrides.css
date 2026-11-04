@@ -1,0 +1,38 @@
+.visual-meli{background:#e9e9e5;display:flex;align-items:center;justify-content:center;padding:36px 8% 20px}.visual-meli img{width:100%;height:100%;object-fit:contain;object-position:top center;box-shadow:0 15px 35px #25271b16}.visual-4{background:#dce7c1;display:grid;place-items:center}.club-card{width:62%;height:65%;background:#f8f7f0;border-radius:5px;padding:23px 26px;display:flex;flex-direction:column;box-shadow:0 18px 45px #535a3a22;transform:rotate(-3deg)}.club-card>span{font:8px var(--mono);letter-spacing:.06em}.club-card strong{font-size:25px;letter-spacing:-.05em;margin:auto 0 2px}.club-card strong i{font-style:normal;color:#9bb73b}.club-card small{font-size:10px;color:var(--muted)}.club-card>b{margin-top:17px;border-top:1px solid var(--line);padding-top:12px;font-size:9px}.journey-highlight{position:relative;background:#f1e0cd;border-radius:50%;padding:20px 15px;z-index:2}.toolkit{border-top:1px solid var(--line);padding-top:19px;margin-top:22px}.toolkit .eyebrow{display:block;font-size:8px;margin:0 0 8px}.toolkit p{font-size:11px;color:var(--muted);margin:0}@media(max-width:760px){.visual-meli{padding:28px 5% 12px}.club-card{width:75%;height:66%;padding:18px}.club-card strong{font-size:20px}}
+.wordmark-image{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;overflow:hidden;border-radius:50%}
+.wordmark-image img{display:block;width:100%;height:100%;object-fit:cover;mix-blend-mode:multiply}
+@media(max-width:760px){.wordmark-image{width:42px;height:42px}}
+.hero-art[role="button"]:focus-visible{outline:2px solid #b59ecb;outline-offset:6px;border-radius:10px}
+
+.visual-meli .visual-label-meli{top:14px;left:15px;z-index:4;padding:7px 12px;border:1px solid #eadfd5;border-radius:999px;background:#fffaf0;color:#292b27;box-shadow:0 3px 10px #25271b18}
+
+.portrait-word-layer{position:absolute;inset:8px;z-index:2;overflow:hidden;border-radius:8px;pointer-events:none}
+.portrait-word-pop{position:absolute;display:inline-block;max-width:calc(100% - 16px);padding:3px 5px;border:1px solid #ffffffaa;border-radius:5px;font:9px/1.1 var(--mono);letter-spacing:.01em;white-space:nowrap;box-shadow:0 2px 8px #302a3214;opacity:0;transform:translate(-50%,-50%) scale(.82);animation:portrait-word-arrive .28s ease-out forwards;pointer-events:none}
+.portrait-word-pop.lilac{background:#eee5f7;color:#685678}.portrait-word-pop.peach{background:#f8e3d9;color:#8b5f52}.portrait-word-pop.butter{background:#f7efcf;color:#756539}.portrait-word-pop.mint{background:#e2eee2;color:#526f59}.portrait-word-pop.rose{background:#f5e2eb;color:#845a70}
+.portrait-word-pop.is-fading{opacity:0;transform:translate(calc(-50% + var(--drift-x)),calc(-50% + var(--drift-y))) scale(.92);transition:opacity .38s ease,transform .38s ease}
+@keyframes portrait-word-arrive{to{opacity:1;transform:translate(-50%,-50%) scale(1)}}
+@media(prefers-reduced-motion:reduce){.portrait-word-pop{animation:none;opacity:1;transform:translate(-50%,-50%)}.portrait-word-pop.is-fading{transition:opacity .15s ease}}
+
+/* Pull Selected work closer to the hero while preserving a calm section opening. */
+.work{padding-top:68px}
+@media(max-width:760px){.work{padding-top:54px}}
+
+
+.project-featured-wrap{grid-column:1/-1;min-width:0}
+.project-featured-wrap .project-featured{grid-column:auto}
+.project-featured-wrap>.project-visual.visual-meli{padding:0;display:block}
+.summary-image-scroll{position:absolute;inset:0;overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;scroll-behavior:smooth;scrollbar-width:thin;scrollbar-color:#b7a8bc #ffffff35}
+.summary-image-scroll img{display:block;width:100%;height:auto;object-fit:contain;object-position:top center;box-shadow:none;user-select:none}
+.summary-image-scroll::-webkit-scrollbar{width:7px}
+.summary-image-scroll::-webkit-scrollbar-track{background:#ffffff35}
+.summary-image-scroll::-webkit-scrollbar-thumb{background:#b7a8bc99;border:2px solid transparent;border-radius:999px;background-clip:padding-box}
+@media(prefers-reduced-motion:reduce){.summary-image-scroll{scroll-behavior:auto}}
+.project-featured-wrap>.project-visual{height:380px}
+@media(max-width:760px){.project-featured-wrap>.project-visual{height:270px}}
+.visual-5{background:#eee5f0}
+.site-footer .wordmark-image{width:44px;height:44px;flex:0 0 44px;background:#fffaf2;border:1px solid #e4dbe3}
+
+/* Eight-petal flower motif replacing the former Claude burst marks. */
+.flower-mark{display:inline-block;width:1em;height:1em;overflow:visible;fill:currentColor;vertical-align:-.12em;flex:none}
+.manifesto-mark .flower-mark,.portrait-spark .flower-mark,.editorial-spark .flower-mark,.editorial-flower .flower-mark,.cv-card-spark .flower-mark{display:block}
+.cv-language-icon .flower-mark{width:1em;height:1em}
