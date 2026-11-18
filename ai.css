@@ -7,6 +7,11 @@
 .ai-practice-page .ai-hero::before,.ai-practice-page .ai-hero::after,.ai-practice-page .ai-collab-art::before,.ai-practice-page .ai-collab-art::after{content:none!important;display:none!important;background:none!important}
 .ai-practice-page .ai-hero img,.ai-practice-page .ai-collab-art img{display:none!important}
 .ai-practice-page .ai-collab-art{background:none!important}
+/* The stray portrait is attached to the page canvas in the published build,
+   so clear page-level backgrounds and decorative pseudo-elements as well. */
+.ai-practice-page{background-color:var(--paper)!important;background-image:none!important;background-attachment:scroll!important}
+.ai-practice-page::before,.ai-practice-page::after,.ai-practice-page main::before,.ai-practice-page main::after{content:none!important;display:none!important;background-image:none!important}
+html:has(body.ai-practice-page)::before,html:has(body.ai-practice-page)::after{content:none!important;display:none!important;background-image:none!important}
 .ai-practice-page .site-header nav a[aria-current="page"]{text-decoration:underline;text-decoration-color:#a8b85e;text-decoration-thickness:2px;text-underline-offset:7px}
 .ai-hero{min-height:670px;padding:90px 10.4% 72px;position:relative;display:grid;grid-template-columns:1fr .95fr;align-items:center;gap:5%;overflow:hidden;background-image:radial-gradient(#d8cce2 1.2px,transparent 1.2px);background-size:22px 22px;background-position:0 0}
 .ai-hero-copy{position:relative;z-index:2;max-width:570px}.ai-hero-copy .eyebrow{margin-bottom:27px}.ai-hero h1{font-size:clamp(66px,8vw,112px);font-weight:500;line-height:.88;letter-spacing:-.075em;margin:0 0 30px}.ai-hero h1 em,.ai-intro h2 em,.ai-capabilities h2 em,.ai-process h2 em{font-family:var(--serif);font-weight:500;letter-spacing:-.055em;color:#899e43}.ai-hero-lede{max-width:475px;font-size:17px;line-height:1.7;color:#585b53;margin:0 0 28px}.ai-scroll-link{display:inline-flex;align-items:center;gap:18px;border-bottom:1px solid #9ca087;padding:0 0 8px;font-size:12px;font-weight:700}.ai-scroll-link span{font-size:16px}
